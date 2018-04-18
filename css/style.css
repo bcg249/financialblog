@@ -1,0 +1,455 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, 
+ p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p {
+    font-size: 22px
+}
+
+body {background-color: rgb(255, 250, 249);font-family: 'Roboto Slab', serif;}
+
+/*backup font: font-family: "Courier New", Courier, monospace*/
+
+header{
+   /* width:100%;*/
+    /*width:20vh;*/
+    text-align: center;
+    margin:auto;
+    border-bottom: solid;
+    padding: 15px;
+    margin:10px;
+}
+
+header div h1 a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+
+/*This sets up the navigation bar on across the top of every page. */
+
+nav ul{
+    flex-grow:10;
+    display:flex;
+    list-style-type:none; 
+    text-align: center;
+    padding:10px;
+    font-size:19px;
+    
+}
+
+/*Removes the underline on the nav links.*/ 
+
+nav ul a {
+    text-decoration:none;
+    color:rgb(0,0,0);
+    border:20;
+}
+
+nav ul li{
+    
+    width:80px;
+    flex-grow:1;
+    text-align:center;
+    color:rgb(0,0,0);
+    
+}
+
+/*This sets the picture on the top of the home page.*/
+
+.bigpicture1 {
+    height:350px;
+    background-color:#00FF00;
+    background-image:url("../images/greens.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    display: flex;  /*this creates flex container*/
+    flex-direction:row;  /*set flex itemsin a column*/
+    justify-content:center; /*center items vertically*/
+    align-items:center;
+    padding-top:10px;
+}
+
+/*This makes the "button" in the top inset on the index.html*/
+
+.buttonblock {
+    
+    background-color:rgb(0,0,0);
+    color:rgb(255,255,255);
+    padding:8px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.inset {
+    
+    height:200px;
+    width:auto;
+    background-color: rgb(255, 250, 249);
+    display: flex;  /*this creates flex container*/
+    flex-direction:column;  /*set flex itemsin a column*/
+    justify-content:center;/*center items vertically*/
+    align-items:center; 
+    border-radius:15px;
+    padding: 5px 20px 5px 20px;
+}
+
+
+
+.examples {  
+    
+    
+    
+    width:95%;
+    display:flex;
+    /*border:solid;*/
+    margin:auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    /*overflow:auto;*/
+        
+}
+
+.examples-subset{
+    
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin: 30px 30px;
+}
+
+.pictures{
+    height:200px;
+    width:200px;
+    display:flex;
+    flex-grow:1;
+    background-color:rgb(255,255,255);
+    justify-content:center;/*center items vertically*/
+    align-items:center; 
+    margin:30px 30px;
+   /* border:solid;*/
+    /*border-radius:60px;*/
+    /*padding: 5px 20px 5px 20px;*/
+    /*background-image:url("../images/smiles.jpg");*/
+    /*background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    */
+}
+
+.tiles {
+    padding:0px;
+    margin:10px;
+    position:relative;
+    width:auto;  
+    text-align:center;
+            
+}
+
+.tiles a{
+    text-decoration:none;
+    color:rgb(0,0,0);
+}
+
+
+footer{
+    text-align: center;
+    padding:50px;
+    margin-top: 50px;
+    /*position:fixed;*/
+   /* bottom:0;
+    right:0;
+    left:0;
+    width:20vh*/;
+    
+       
+}
+
+.bigpicture2 {
+    height:350px;
+    background-color:#00FF00;
+    background-image:url("../images/potted.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    display: flex;  /*this creates flex container*/
+    flex-direction:row;  /*set flex itemsin a row or column*/
+    justify-content:center; /*center items vertically*/
+    align-items:center;
+    padding-top:10px;
+}
+
+.flexbox{
+    /*display:flex;*/
+    /*float:left*/;
+    /*padding-left:200px;
+    padding-right:125px;
+    overflow:hidden;*/
+    /*align-content:space-between;*/
+    /*flex-direction: row;*/
+}
+
+.left {
+    
+    /*display:flex;*/
+    /*flex-grow:2;*/
+   /* position:relative;
+    float:left;
+    width:200px;
+    right:200px;
+    margin-top:10%;
+    margin-left:-75%;
+    margin-bottom:-2000px;
+    padding-bottom:2000px;*/
+    border:solid;
+    width:20%;
+    float:left;
+}
+
+left p {
+    
+    margin-bottom:20px;
+    
+}
+
+.box{
+    /*border:solid;*/
+    display:flex;
+    /*flex-direction:column;*/
+    margin-bottom:20px;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;  
+    margin-top:100px;
+}
+
+.right {
+    width:80%;
+    float:left;
+    border:solid;
+    
+}
+
+.mainbody {
+    
+    display:flex;
+    /*flex-direction: row;*/
+    flex-flow:wrap;
+}
+
+.mainmain {
+    
+    flex:1;
+    display:flex;
+    /*background-color:orange;*/
+}
+
+.mainmaintool{
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*border:solid;*/
+    /*background-color:aqua;*/
+    
+}
+
+aside {
+    width:20vw;
+    order:-1;
+    margin-top:100px;
+    /*border:solid;
+    background-color:blue;*/
+    
+}
+
+article {
+    flex:1;
+    /*border:solid;*/
+    /*background-color:green;*/
+    padding: 20px 200px 20px 100px;
+    
+    
+}
+
+.collection {
+    flex:1;
+    /*border:solid;*/
+    padding: 20px 200px 20px 100px;
+    /*background-color:red;*/
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    
+    
+}
+
+article img {
+    padding: 0px 0px 20px 30px;
+    float:right;
+}
+
+article p {
+    text-align:justify
+}
+
+
+
+/*Style for the Tools Page*/
+
+
+#tool1 {
+    
+    background-color: rgb(155,255,255);
+    background-image:url("../images/bike.jpg");
+    background-repeat: no-repeat;
+    width:500px;
+    height:500px;
+    border:solid;
+    background-position:center;
+    background-size: cover;
+    display: flex;  /*this creates flex container*/
+    flex-direction:column;  /*set flex itemsin a column*/
+    justify-content:center;/*center items vertically*/
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+#tool1 h2 {
+    margin:100px;
+    color: rgb(0,0,0);
+    text-align:center;
+    background-color:rgb(255, 250, 249);
+    border-radius:15px;
+    padding:15px;
+}
+
+#tool1 a {
+    text-decoration: none;
+}
+
+#tool2 {
+    background-color: rgb(155,255,255);
+    background-image:url("../images/oneway.jpg");
+    background-repeat: no-repeat;
+    width:500px;
+    height:500px;
+    border:solid;
+    background-position:center;
+    background-size: cover;
+    display: flex;  /*this creates flex container*/
+    flex-direction:column;  /*set flex itemsin a column*/
+    justify-content:center;/*center items vertically*/
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+#tool2 h2 {
+    margin:100px;
+    color: rgb(0,0,0);
+    text-align:center;
+    background-color:rgb(255, 250, 249);
+    border-radius:15px;
+    padding:15px;
+    }
+
+#tool2 a {
+    text-decoration: none;
+}
+
+#tool3 {
+    background-color: rgb(155,255,255);
+    background-image:url("../images/arms.jpg");
+    background-repeat: no-repeat;
+    width:500px;
+    height:500px;
+    border:solid;
+    background-position:center;
+    background-size: cover;
+    display: flex;  /*this creates flex container*/
+    flex-direction:column;  /*set flex itemsin a column*/
+    justify-content:center;/*center items vertically*/
+    align-items:center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:50px;
+    margin-bottom:50px;
+        
+}
+
+#tool3 h2 {
+    margin:100px;
+    color: rgb(0,0,0);
+    text-align:center;
+    background-color:rgb(255, 250, 249);
+    border-radius:15px;
+    padding:15px;
+    }
+
+#tool3 a {
+    text-decoration: none;
+}
+
+#tool4 {
+    
+    background-image:url("../images/bike.jpg");
+    width:500px;
+    height:500px;
+}
+
+
